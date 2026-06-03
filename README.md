@@ -32,6 +32,7 @@ pnpm build     # 构建 SSR 产物
 pnpm preview   # 本地预览构建结果
 pnpm generate  # 生成静态站点
 pnpm lint      # 代码检查
+pnpm check     # 完整校验
 ```
 
 ## Docker 部署
@@ -60,11 +61,3 @@ docker run --rm -p 3000:3000 <project-name>
 ## AI 协作
 
 AI 编码助手应先阅读 `AGENTS.md`，再修改项目结构或新增能力。
-
-## 模板约定
-
-- `package.json` 默认不写死 `name`，适合 `degit` 作为纯模板使用。
-- `postinstall` 只会在存在 `.git` 时安装 git hooks，Docker 和无 git 环境不会被阻塞。
-- 默认不包含 Pinia。只有共享状态跨越多个业务模块或路由时再引入。
-- 默认不包含 PWA。需要离线能力时再按业务需求添加。
-- 框架能力优先放在 `app/` 约定目录中，业务能力优先沉到 `features/<feature>`。

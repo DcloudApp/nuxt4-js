@@ -20,6 +20,12 @@ Key rules:
 Validate changes with:
 
 ```bash
+pnpm check
+```
+
+or run separately:
+
+```bash
 pnpm lint
 pnpm build
 ```

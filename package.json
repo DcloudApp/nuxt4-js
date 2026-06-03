@@ -10,6 +10,7 @@
   },
   "scripts": {
     "build": "nuxt build",
+    "check": "pnpm lint && pnpm build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "prepare": "nuxt prepare",
@@ -48,6 +49,6 @@
     "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
-    "*": "eslint --fix"
+    "*.{css,html,js,json,jsonc,md,vue,yaml,yml}": "eslint --fix"
   }
 }
