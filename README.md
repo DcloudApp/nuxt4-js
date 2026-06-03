@@ -18,8 +18,8 @@
 使用 `degit` 创建：
 
 ```bash
-npx degit DcloudApp/nuxt-vitesse my-nuxt-vitesse-app
-cd my-nuxt-vitesse-app
+npx degit DcloudApp/nuxt4-js my-nuxt4-app
+cd my-nuxt4-app
 pnpm install
 pnpm dev
 ```
@@ -56,6 +56,10 @@ docker run --rm -p 3000:3000 <project-name>
 - `app/constants/` - 小型共享常量
 
 详细规范见 `app/README.md`。
+
+## AI 协作
+
+AI 编码助手应先阅读 `AGENTS.md`，再修改项目结构或新增能力。
 
 ## 模板约定
 
